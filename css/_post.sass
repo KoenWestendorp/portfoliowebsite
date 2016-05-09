@@ -1,0 +1,58 @@
+section#post
+  p
+    font-size: 1.1rem
+    padding-top: .5em
+
+  div.meta
+    margin-top: 2.5em
+    margin-bottom: 2.5em
+    text-align: center
+    p.author
+      font-style: italic
+      opacity: 0.8
+      margin-bottom: 1em
+      i.fa-heart
+        color: $red
+        &:hover
+          animation: pulse 1s ease-out
+          animation-iteration-count: infinite
+      a
+        &:hover
+          text-decoration: none
+          color: $blue
+        i.fa-twitter
+          display: relative
+          color: $blue
+          opacity: 0
+          left: 20px
+          transition: all 200ms ease-in-out
+          padding-left: -16px
+
+      a:hover > i.fa-twitter
+        opacity: 1
+        left: 0
+        padding-left: 5px
+        animation: pop 500ms ease-out
+    p.date
+      opacity: 0.5
+
+  img
+    width: 100%
+    max-height: 555px
+    min-height: 100px
+    object-fit: cover
+    margin-bottom: 1em
+
+  img:after
+    content: "\f127" " Broken Image of " attr(alt)
+    display: block
+    font-size: 16px
+    font-style: normal
+    font-family: FontAwesome
+    color: rgb(100, 100, 100)
+
+    position: absolute
+    top: 5px
+    left: 0
+    width: 100%
+    text-align: center

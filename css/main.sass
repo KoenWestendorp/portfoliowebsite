@@ -1,0 +1,55 @@
+---
+---
+
+@import "_vars.sass"
+@import "_type.sass"
+@import "_animations.sass"
+
+@import "_header.sass"
+@import "_footer.sass"
+
+@import "_home.sass"
+@import "_404.sass"
+@import "_post.sass"
+// @import "_about.sass"
+// @import "_contact.sass"
+
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css)
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface)
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css)
+
+
+/*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
+
+html
+  background-color: $backgroundcolor
+
+body
+  font-family: $regular-font-family
+  color: $black
+  //-webkit-font-smoothing: antialiased
+  flex: 1
+
+// .cf:before, .cf:after
+//   content: ""
+//   display: table
+//
+// .cf:after
+//   clear: both
+
+main
+  display: flex
+  justify-content: space-around
+
+  section
+    max-width: 740px
+    margin-left: 70px
+    margin-right: 70px
+    @media only screen and (max-width: 550px)
+      margin-left: 0
+      margin-right: 0
+
+br.responsive
+  display: none
+  @media only screen and (max-width: 400px)
+    display: block

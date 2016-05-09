@@ -1,0 +1,28 @@
+---
+layout: default
+title: portfolio
+---
+
+<section id="posts">
+  {% for post in site.posts %}
+  <div class="post">
+    <a href="{{ post.url }}">
+      <img src="{{ post.thumbnail-image }}" alt="{{ post.title }}" class="thumbnail">
+      <div class="info">
+        <p class="info">{{ post.title | truncatewords: 4 }}</p>
+        <p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</section>
+
+<!--
+{% for post in site.posts %}
+  <section class="post">
+    <p class="content-preview">{{ post.content | truncatewords: 50 }}</p>
+    <p class="date">{{ post.date | date: '%B %d, %Y' }}</p><a class="learnmore" href="{{ post.url }}">Learn more...</a>
+    <img class="image" src="{{ post.image }}">
+  </section>
+{% endfor %}
+ -->

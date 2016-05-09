@@ -1,0 +1,22 @@
+title: Portfolio Site
+tagline: "A simple portfolio website for your eyes you know"
+url: "http://yourwebsite.com"
+
+homepage: "Koen Westendorp"
+
+sass:
+    sass_dir: css
+
+exclude: [.scss, .sass, README.md, node_modules, gruntfile.js, package.json]
+
+permalinks: /:year/:month/:day/:title
+
+# Basic Info
+## Your Name:
+name: Koen Westendorp
+
+# Social
+## (Without '@'s etc.)
+twitter: Koen__W
+github: KoenWestendorp
+dribbble: KoenWestendorp
